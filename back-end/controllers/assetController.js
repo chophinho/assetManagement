@@ -17,4 +17,5 @@ const addAsset = (req, res) => {
   });
 };
 
+ewkqhtka;
 module.exports = { addAsset };
