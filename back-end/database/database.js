@@ -5,7 +5,7 @@ const db = new sqlite3.Database("./asset_management.db", (err) => {
     console.error("Lỗi kết nối SQLite:", err);
     return;
   }
-  console.log(" Kết nối SQLite thành công");
+  console.log(" oke");
 });
 
 module.exports = db;

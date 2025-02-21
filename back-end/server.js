@@ -9,12 +9,14 @@ const assetRoutes = require("./routes/assetRoutes");
 const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRoutes");
 const clientRoutes = require("./routes/clientRoutes");
+const storageRoutes = require("./routes/storageRoutes");
 app.use("/v1/asset", assetRoutes);
 app.use("/v1/user", userRoutes);
 app.use("/v1/auth", authRoutes);
 app.use("/v1/client", clientRoutes);
+app.use("/v1/storage", storageRoutes);
 
 const PORT = 5000;
 app.listen(PORT, () =>
-  console.log(`✅ Server đang chạy tại http://localhost:${PORT}`)
+  console.log(`Server đang chạy tại http://localhost:${PORT}`)
 );
